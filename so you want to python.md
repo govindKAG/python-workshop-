@@ -2,7 +2,7 @@
 
 ---
 
-## what this talk will be not 
+## what this talk will not be  
 
 - this talk will not be an exhaustive feature tour 
 - I will not teach you syntax
@@ -189,9 +189,9 @@ def pali(s):
 
 —-
 
-# Why does this matter 
+# Why does this matter ?
 
-- programming isn’t about solving small problems like this , instead it is about building systems and systemic solutions to problems…
+- programming isn’t about solving small problems like this , instead it is about building systems and systematic solutions to problems…
 - Problems much more complex than reversing a string…
 - But all problems can be broken down into really small sub problems that rely on really simple pieces of code just like the one we saw.
 - Not having to wrestle with the language allows us to think more clearly about the bigger picture.
@@ -204,9 +204,97 @@ def pali(s):
 
 ##let me show you what i mean.
 
-code here for listing out the palindromes in the script of harry potter or something like that using that , just use a generator for the script feed.
+```python
+def pali(s):
+	if s == s[::-1] :
+		return True
+	else: return False
+	
+
+with open('foo.txt') as f:
+    rv = {i.strip() for i in f if pali(i.strip())}
+    print(rv)
+```
 
 ——
 
-# 
+-I just fed this code a list of ~497000 most common words on Reddit.
+-It took me about 2 mins to write this code and about 10 mins to grab the words using PRAW.
+-It ran in 0.2 seconds.
+
+
+
+In just a fifth of a second i know the most common palindromes on Reddit.
+
+—-
+
+![fit](common words on reddit.png)
+
+—-
+
+## Python is a true high level language
+
+- Build small things first and then combine them 
+- Python helps you out at every stage by giving you amazingly well designed tools.
+- You shouldn’t have to worry about the nitty-gritty.
+- Works with you , it is amenable to various styles
+	- functional 
+	- imperative 
+	- object oriented 
+- True pythonic style allows you to use what is the best 
+
+——
+
+## Have no illusions
+
+- Good tools does not equal good artist.
+- It is arguable that higher level tools are really hard to understand and to gain mastery with.
+- Python cannot make you a good programmer. A good Java programmer will still write superior code
+- Truly beautiful python is more of an art than a science.
+
+———
+
+#[fit] with great power comes great responsibility. 
+
+——
+
+
+#[fit] Now for the fun stuff 
+
+—-
+
+## the secret sauce of python 
+
+- The *amazing* standard library 
+- The *amazing* third party libraries
+- And above all the *amazing* community 
+
+—
+
+# let’s send an email 
+
+```python
+import smtplib
+ 
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login(“fakeemail@fakecdf”, “fakepass”)
+ 
+msg = "this is all teh message there is today i am afraid"
+server.sendmail("kagarmy@gmail.com", "govindsomalal7@gmail.com", msg)
+server.quit()
+```
+Damn’t son 
+—
+
+# let’s subscribe to subreddits 
+
+——
+
+# let’s write an object detection app 
+
+
+
+
+
 
