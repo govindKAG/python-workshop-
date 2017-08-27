@@ -278,14 +278,16 @@ import smtplib
  
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login(“fakeemail@fakecdf”, “fakepass”)
+server.login("fakeemail@fakecdf", "fakepass")
  
-msg = "this is all teh message there is today i am afraid"
-server.sendmail("kagarmy@gmail.com", "govindsomalal7@gmail.com", msg)
+msg = " you know nothing jon snow "
+server.sendmail("ygritte@wildling.com ", " jonsnow@kinginthenorth.com", msg)
 server.quit()
 ```
-Damn’t son 
-—
+That is all it takes to send an email with python (not really a very recent gmail change now requires you to get an OAuth token. That is a few more lines)
+
+——
+ 
 
 # let’s subscribe to subreddits 
 
