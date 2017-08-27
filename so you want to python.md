@@ -68,6 +68,9 @@ If the implementation is easy to explain, it may be a good idea.
 
 ——
 
+### The C way 
+
+
 ```C
 main() {
 int a = 10,b = 20,temp;
@@ -83,8 +86,8 @@ b = temp;
 
 ## isn’t this hideous?
 
-- A lot of noise.
 - An extra variable.
+- Type declarations.
 - Syntactic noise.
 
 ——
@@ -135,4 +138,75 @@ def fib(n):
 
 ——
 
+- Good code should be easy to read and in a way self documenting.
+
+- Good code makes its meaning clear.
+
+——
+
+#[fit] reverse a string 
+
+——
+
+### The C way 
+
+——
+
+#[fit] There must be a better way!
+
+——
+
+
+### the pythonic way 
+
+```python 
+
+s = “this”
+
+print(s[::-1])
+```
+———
+
+#Concept
+
+- Integrate powerful tools directly into the language 
+- Actively enforce good programming practices 
+- Higher level tools allow you to think on a more abstract level 
+- Learning to use the tools will be harder but you can be sure that they are the state of the art 
+
+——
+
+### lets take this idea out for a spin 
+<br></br>
+
+
+```python
+def pali(s):
+	if s == s[::-1] :
+		return True
+	else: return False
+```
+
+—-
+
+# Why does this matter 
+
+- programming isn’t about solving small problems like this , instead it is about building systems and systemic solutions to problems…
+- Problems much more complex than reversing a string…
+- But all problems can be broken down into really small sub problems that rely on really simple pieces of code just like the one we saw.
+- Not having to wrestle with the language allows us to think more clearly about the bigger picture.
+
+——
+
+#[fit] easy things should be easy
+
+——
+
+##let me show you what i mean.
+
+code here for listing out the palindromes in the script of harry potter or something like that using that , just use a generator for the script feed.
+
+——
+
+# 
 
