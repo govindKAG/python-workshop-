@@ -1,3 +1,17 @@
+---
+- >-
+  programming isn't about solving small problems like this , instead it is about
+  building systems and systematic solutions to problems...
+- Problems much more complex than reversing a string...
+- >-
+  But all problems can be broken down into really small sub problems that rely
+  on really simple pieces of code just like the one we saw.
+- >-
+  Not having to wrestle with the language allows us to think more clearly about
+  the bigger picture.
+- null
+---
+
 # [fit]SO YOU WANT TO PYTHON
 
 --------------------------------------------------------------------------------
@@ -8,7 +22,7 @@
 - I will not teach you syntax
 - you won't even be able to write python by the end of the talk
 
-----
+--------------------------------------------------------------------------------
 
 ## what I am looking to do
 
@@ -21,21 +35,21 @@
 
 # [fit] import this?
 
-----
+--------------------------------------------------------------------------------
 
 # THE ZEN OF PYTHON
 
 Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced.
 
-----
+--------------------------------------------------------------------------------
 
 In the face of ambiguity, refuse the temptation to guess. There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you're Dutch. Now is better than never. Although never is often better than _right_ now. If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea.
 
-----
+--------------------------------------------------------------------------------
 
 # [fit] quick survey
 
-----
+--------------------------------------------------------------------------------
 
 # Meta
 
@@ -45,11 +59,11 @@ In the face of ambiguity, refuse the temptation to guess. There should be one-- 
 - The idea is not to learn how to write python but understand what the point of this language is.
 - there will be code but you don't have to understand it , just take away the ideology.
 
-----
+--------------------------------------------------------------------------------
 
 ## [fit] Exchanging 2 values
 
-----
+--------------------------------------------------------------------------------
 
 ### The C way
 
@@ -64,7 +78,7 @@ b = temp;
 }
 ```
 
-----
+--------------------------------------------------------------------------------
 
 ## isn't this hideous?
 
@@ -72,15 +86,15 @@ b = temp;
 - Type declarations.
 - Syntactic noise.
 
-----
+--------------------------------------------------------------------------------
 
 # [fit] There must be a better way!
 
-----
+--------------------------------------------------------------------------------
 
 > A high level language is one which doesn't require attention to the irrelevant.
 
-----
+--------------------------------------------------------------------------------
 
 ## let's look at the pythonic way to do things
 
@@ -98,14 +112,14 @@ b = temp;
 
 READABILITY COUNTS , BEAUTIFUL IS BETTER THAN UGLY, SIMPLE IS BETTER THAN COMPLEX
 
-----
+--------------------------------------------------------------------------------
 
 # Concept
 
 - something that corresponds to a single unit of thought should be expressed in a single line , one logical step should be one LOC
 - Readability counts a lot . Code is _READ_ a lot more than it is _WRITTEN_
 
-----
+--------------------------------------------------------------------------------
 
 ## lets take this idea for a spin
 
@@ -118,25 +132,25 @@ def fib(n):
     return y
 ```
 
-----
+--------------------------------------------------------------------------------
 
 - Good code should be easy to read and in a way self documenting.
 
 - Good code makes its meaning clear.
 
-----
+--------------------------------------------------------------------------------
 
 # [fit] reverse a string
 
-----
+--------------------------------------------------------------------------------
 
 ## The C way
 
-----
+--------------------------------------------------------------------------------
 
 # [fit] There must be a better way!
 
-----
+--------------------------------------------------------------------------------
 
 ## the pythonic way
 
@@ -147,7 +161,7 @@ s = “this”
 print(s[::-1])
 ```
 
-------
+--------------------------------------------------------------------------------
 
 # Concept
 
@@ -156,7 +170,7 @@ print(s[::-1])
 - Higher level tools allow you to think on a more abstract level
 - Learning to use the tools will be harder but you can be sure that they are the state of the art
 
-----
+--------------------------------------------------------------------------------
 
 ## lets take this idea out for a spin
 
@@ -170,20 +184,9 @@ def pali(s):
     else: return False
 ```
 
----
-
-# Why does this matter ?
-
-- programming isn't about solving small problems like this , instead it is about building systems and systematic solutions to problems...
-- Problems much more complex than reversing a string...
-- But all problems can be broken down into really small sub problems that rely on really simple pieces of code just like the one we saw.
-- Not having to wrestle with the language allows us to think more clearly about the bigger picture.
-
-----
-
 # [fit] easy things should be easy
 
-----
+--------------------------------------------------------------------------------
 
 ## let me show you what i mean.
 
@@ -199,17 +202,17 @@ with open('foo.txt') as f:
     print(rv)
 ```
 
-----
+--------------------------------------------------------------------------------
 
 -I just fed this code a list of ~497000 most common words on Reddit. -It took me about 2 mins to write this code and about 10 mins to grab the words using PRAW. -It ran in 0.2 seconds.
 
 In just a fifth of a second i know the most common palindromes on Reddit.
 
----
+--------------------------------------------------------------------------------
 
 ![fit](common words on reddit.png)
 
----
+--------------------------------------------------------------------------------
 
 ## Python is a true high level language
 
@@ -222,9 +225,11 @@ In just a fifth of a second i know the most common palindromes on Reddit.
   - imperative
   - object oriented
 
-- True pythonic style allows you to mix and match these styles , use what ever solves the problem that best for you
+--------------------------------------------------------------------------------
 
-----
+- True pythonic style allows you to _mix and match_ these styles , use what ever approach is the best for the problem at hand.
+
+--------------------------------------------------------------------------------
 
 ## Have no illusions
 
@@ -233,15 +238,15 @@ In just a fifth of a second i know the most common palindromes on Reddit.
 - Python cannot make you a good programmer. A good Java programmer will still write superior code
 - Truly beautiful python is more of an art than a science.
 
-------
+--------------------------------------------------------------------------------
 
 # [fit] with great power comes great responsibility.
 
-----
+--------------------------------------------------------------------------------
 
 # [fit] Now for the fun stuff
 
----
+--------------------------------------------------------------------------------
 
 ## the secret sauce of python
 
@@ -249,7 +254,7 @@ In just a fifth of a second i know the most common palindromes on Reddit.
 - The _amazing_ third party libraries
 - And above all the _amazing_ community
 
---
+--------------------------------------------------------------------------------
 
 # let's send an email
 
@@ -265,12 +270,34 @@ server.sendmail("ygritte@wildling.com ", " jonsnow@kinginthenorth.com", msg)
 server.quit()
 ```
 
-That is all it takes to send an email with python (not really a very recent gmail change now requires you to get an OAuth token. That is a few more lines)
+That is all it takes to send an email with python (not really now gmail requires you to get an OAuth token. That is a few more lines)
 
-----
+--------------------------------------------------------------------------------
 
-# let's subscribe to subreddits
+# let's write a program that writes the hello world program
 
-----
+```python
+import time
+import pyautogui as pag
+
+#a small decorator that adds a 3 second countdown so that i can position my mouse
+def withcountdown(func):
+    def innerfunc(*args, **kwargs):
+        for i in range(3)[::-1]:
+            print(i+1)
+            time.sleep(1)
+        func(*args, **kwargs)
+    return innerfunc
+
+myfunc = withcountdown(pag.typewrite) # added a small time out to the pyautogui funciton
+
+myfunc("def hw(times):\n\tprint('hello world'*times)")
+```
+
+--------------------------------------------------------------------------------
+
+# doing awesome things is a lot more important than writing verbose code
+
+--------------------------------------------------------------------------------
 
 # let's write an object detection app
