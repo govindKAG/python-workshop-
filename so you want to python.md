@@ -1,5 +1,7 @@
 # [fit]SO YOU WANT TO PYTHON
 
+![](images/splash.jpg)
+
 --------------------------------------------------------------------------------
 
 ## what this talk will not be
@@ -17,7 +19,7 @@
 - I want to expose you to the core principles and ideologies of python...
 - and the general culture of python
 
---
+--------------------------------------------------------------------------------
 
 # [fit] import this?
 
@@ -50,6 +52,8 @@
 
 # [fit] quick survey
 
+![](images/survey.jpg)
+
 --------------------------------------------------------------------------------
 
 # Meta
@@ -69,13 +73,13 @@
 ### The C way
 
 ```c
-main() {
+int main() {
 int a = 10,b = 20,temp;
 
 temp = a;
 a = b;
 b = temp;
-
+return 0;
 }
 ```
 
@@ -99,9 +103,7 @@ b = temp;
 
 ## let's look at the pythonic way to do things
 
-<br>
 <br><br>
-<br>
 
 ```python
     x = 20 , y = 10
@@ -223,7 +225,7 @@ In just a fifth of a second i know the most common palindromes on Reddit.
 
 --------------------------------------------------------------------------------
 
-![fit](common words on reddit.png)
+![fit](images/common words on reddit.png)
 
 --------------------------------------------------------------------------------
 
@@ -244,6 +246,10 @@ In just a fifth of a second i know the most common palindromes on Reddit.
 
 --------------------------------------------------------------------------------
 
+![fit,filtered](images/guido.jpg)
+
+--------------------------------------------------------------------------------
+
 ## Have no illusions
 
 - Good tools does not equal good artist.
@@ -253,11 +259,19 @@ In just a fifth of a second i know the most common palindromes on Reddit.
 
 --------------------------------------------------------------------------------
 
+![fit,filtered](images/telescope.jpg)
+
+--------------------------------------------------------------------------------
+
 # [fit] with great power comes great responsibility.
+
+![](images/power.jpg)
 
 --------------------------------------------------------------------------------
 
 # [fit] Now for the fun stuff
+
+![](images/fun.jpg)
 
 --------------------------------------------------------------------------------
 
@@ -317,6 +331,6 @@ myfunc("def hw(times):\n\tprint('hello world'*times)")
 
 --------------------------------------------------------------------------------
 
-# doing awesome things is a lot more important than writing verbose code
+# doing awesome things is a lot more important than writing code
 
---------------------------------------------------------------------------------
+![filtered](images/create.jpg)
