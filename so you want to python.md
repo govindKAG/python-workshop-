@@ -309,8 +309,14 @@ myfunc("def hw(times):\n\tprint('hello world'*times)")
 
 --------------------------------------------------------------------------------
 
-# doing awesome things is a lot more important than writing verbose code
+# Concept
+
+- DRY. Extend the functionality of things already available at your disposal whenever you can.
+- In this example i used a _Decorator_ to extend the functionality of _typewrite_.
+- If it has already been written, it is not worth writing again.
 
 --------------------------------------------------------------------------------
 
-# let's write an object detection app
+# doing awesome things is a lot more important than writing verbose code
+
+--------------------------------------------------------------------------------
