@@ -103,15 +103,15 @@ return 0;
 
 ## let's look at the pythonic way to do things
 
-<br><br>
+<br>
+<br>
 
 ```python
     x = 20 , y = 10
     x,y = y,x
 ```
 
-<br>
-<br>
+<br><br>
 
 READABILITY COUNTS , BEAUTIFUL IS BETTER THAN UGLY, SIMPLE IS BETTER THAN COMPLEX
 
@@ -177,8 +177,7 @@ print(s[::-1])
 
 ## lets take this idea out for a spin
 
-<br>
-<br>
+<br><br>
 
 ```python
 def pali(s):
@@ -219,7 +218,9 @@ with open('foo.txt') as f:
 
 --------------------------------------------------------------------------------
 
--I just fed this code a list of ~497000 most common words on Reddit. -It took me about 2 mins to write this code and about 10 mins to grab the words using PRAW. -It ran in 0.2 seconds.
+- I just fed this code a list of ~497000 most common words on Reddit.
+- It took me about 2 mins to write this code and about 10 mins to grab the words using PRAW.
+- It ran in 0.2 seconds.
 
 In just a fifth of a second i know the most common palindromes on Reddit.
 
@@ -234,11 +235,9 @@ In just a fifth of a second i know the most common palindromes on Reddit.
 - Build small things first and then combine them
 - Python helps you out at every stage by giving you amazingly well designed tools.
 - You shouldn't have to worry about the nitty-gritty.
-- Works with you , it is amenable to various styles
+- Works with you , it is amenable to various styles but not tied one.
 
-  - functional
-  - imperative
-  - object oriented
+  - functional, imperative, object oriented
 
 --------------------------------------------------------------------------------
 
