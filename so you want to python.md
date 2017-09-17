@@ -103,15 +103,15 @@ return 0;
 
 ## let's look at the pythonic way to do things
 
-<br>
-<br>
+<br><br>
 
 ```python
     x = 20 , y = 10
     x,y = y,x
 ```
 
-<br><br>
+<br>
+<br>
 
 READABILITY COUNTS , BEAUTIFUL IS BETTER THAN UGLY, SIMPLE IS BETTER THAN COMPLEX
 
@@ -149,6 +149,33 @@ def fib(n):
 
 ## The C way
 
+```c
+#include<stdio.h>
+#include<string.h>
+
+int main() {
+   char str[100], temp;
+   int i, j = 0;
+
+   printf("\nEnter the string :");
+   gets(str);
+
+   i = 0;
+   j = strlen(str) - 1;
+
+   while (i < j) {
+      temp = str[i];
+      str[i] = str[j];
+      str[j] = temp;
+      i++;
+      j--;
+   }
+
+   printf("\nReverse string is :%s", str);
+   return (0);
+}
+```
+
 --------------------------------------------------------------------------------
 
 # [fit] There must be a better way!
@@ -177,7 +204,8 @@ print(s[::-1])
 
 ## lets take this idea out for a spin
 
-<br><br>
+<br>
+<br>
 
 ```python
 def pali(s):
