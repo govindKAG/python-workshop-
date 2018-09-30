@@ -74,12 +74,12 @@
 
 ```c
 int main() {
-int a = 10,b = 20,temp;
+    int a = 10,b = 20,temp;
 
-temp = a;
-a = b;
-b = temp;
-return 0;
+    temp = a;
+    a = b;
+    b = temp;
+    return 0;
 }
 ```
 
@@ -156,8 +156,6 @@ def fib(n):
 int main() {
    char str[100], temp;
    int i, j = 0;
-
-   printf("\nEnter the string :");
    gets(str);
 
    i = 0;
@@ -171,7 +169,7 @@ int main() {
       j--;
    }
 
-   printf("\nReverse string is :%s", str);
+   printf("\n%s", str);
    return (0);
 }
 ```

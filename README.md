@@ -1,6 +1,6 @@
 # What is this?
 
-This is a small talk on what the core principles of python, presented through some examples.
+This is a small talk on the core principles of python, presented through some examples.
 
 # Geeky details
 
