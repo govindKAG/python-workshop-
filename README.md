@@ -4,4 +4,4 @@ This is a small talk on the core principles of python, presented through some ex
 
 # Geeky details
 
-- The slides are in markdown , a program called deckset was used to generate the slides,as such it uses their dialect of markdown so the github preview will look partially broken. The pdf should reflect what the slides will look like.
+- The slides are in markdown , a program called deckset was used to generate the slides, as such it uses their dialect of markdown so the github preview will look partially broken. The pdf should reflect what the slides would actually look like.
